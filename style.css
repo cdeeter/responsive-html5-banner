@@ -1,0 +1,112 @@
+/***** Banner *****/
+#banner {
+    width: 100%;
+    height: 100%;
+    font-family: Arial;
+}
+
+h2, h4 {
+    display: inline;
+}
+
+#header {
+    background-color: black;
+    color: #fff2f2;
+    padding-left: 50px;
+    padding-top: 10px;
+    height: 50%;
+    font-size: 250%;
+}
+
+#sub-header {
+    color: black;
+    padding-left: 50px;
+    padding-top: 10px;
+    height: 30%;
+    background: #b8c6df; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b8c6df 0%, #6d88b7 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #b8c6df 0%,#6d88b7 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b8c6df 0%,#6d88b7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', endColorstr='#6d88b7',GradientType=0 ); /* IE6-9 */
+
+}
+
+#image img {
+    position: absolute;
+    z-index: 10;
+    border: 2px solid #b8c6df;
+    right: 25%;
+    height: 110%;
+    top: 0;
+    box-shadow: 5px 5px 10px #212834;
+    border-radius: 5px;
+}
+
+#by-line {
+    position: absolute;
+    z-index: 10;
+    color: white;
+    top: 2%;
+    right: 3%;
+    font-style: italic;
+    text-align: right;
+    font-size: 90%;
+}
+
+
+/***** Media Queries *****/
+@media (min-width:1200px) {
+    #banner {
+        height: 125px;
+    }
+    
+    #image img {
+        height: 130px;
+    }
+    
+    #header {
+        font-size: 200%;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1199px) {
+    #banner {
+        height: 90px;
+    }
+    
+    #image img {
+        height: 95px;
+    }
+    
+    #header {
+        font-size: 150%;
+    }
+    
+    #sub-header {
+        padding-top: 5px;
+    }
+}
+
+@media (max-width: 799px) {
+    #banner {
+        height: 60px;
+    }
+    
+    #image, #by-line-details {
+        display: none;
+    }
+    
+    #header {
+        font-size: 100%;
+    }
+    
+    #sub-header {
+        padding-top: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    #by-line {
+        display: none;
+    }
+}
